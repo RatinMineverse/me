@@ -1,103 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My YouTube Channel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Ratin_Mineverse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- SEO -->
+<meta name="description" content="Ratin_Mineverse — Baldi's Basics gamer, game maker and YouTuber.">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    header {
-      background: url('banner.jpg') center/cover no-repeat;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+<style>
 
-    header h1 {
-      background: rgba(0,0,0,0.6);
-      padding: 15px 25px;
-      border-radius: 10px;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    nav {
-      background: #1f1f1f;
-      padding: 12px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      font-size: 22px;
-    }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg,#0b0b0b,#111);
+  color: white;
+  text-align: center;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+/* ===== BANNER ===== */
+header {
+  background: url('banner.jpg') center/cover no-repeat;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-    nav a:hover {
-      color: #ff0000;
-      transform: scale(1.2);
-    }
+header h1 {
+  background: rgba(0,0,0,0.65);
+  padding: 18px 28px;
+  border-radius: 14px;
+  letter-spacing: 2px;
+}
 
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* ===== PROFILE ===== */
+.profile {
+  width: 130px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-top: -65px;
+  background: #000;
+  box-shadow: 0 0 20px rgba(255,0,0,0.6);
+}
 
-    .profile {
-      width: 120px;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-top: -60px;
-      background: #000;
-    }
+/* ===== NAV ===== */
+nav {
+  background: #1a1a1a;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 22px;
+}
 
-    .videos iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      margin: 15px;
-      border-radius: 10px;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+}
 
-    footer {
-      background: #1f1f1f;
-      padding: 20px;
-      margin-top: 40px;
-    }
+nav a:hover {
+  color: #ff0000;
+  transform: scale(1.25);
+}
 
-    @media(max-width:600px){
-      nav {
-        gap: 18px;
-        font-size: 18px;
-      }
-    }
-  </style>
+/* ===== SECTIONS ===== */
+section {
+  padding: 50px 20px;
+  max-width: 950px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #1f1f1f;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255,0,0,0.4);
+}
+
+/* ===== VIDEOS GRID ===== */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+}
+
+.video-grid iframe:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SOCIAL ===== */
+.social a {
+  margin: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: red;
+}
+
+/* ===== SUBSCRIBE BUTTON ===== */
+.subscribe-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: red;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subscribe-btn:hover {
+  background: #ff3030;
+}
+
+/* ===== BACK TO TOP ===== */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  background: #1f1f1f;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+</style>
 </head>
 <body>
 
-<!-- ===== BANNER ===== -->
 <header>
   <h1>Ratin_Mineverse</h1>
 </header>
 
-<!-- PROFILE IMAGE -->
 <img src="logo.png" class="profile" alt="logo">
 
-<!-- ===== ICON NAVIGATION ===== -->
 <nav>
   <a href="#about"><i class="fas fa-user"></i></a>
   <a href="#videos"><i class="fas fa-play"></i></a>
@@ -105,43 +185,42 @@
   <a href="#contact"><i class="fas fa-envelope"></i></a>
 </nav>
 
-<!-- ===== ABOUT SECTION ===== -->
 <section id="about">
   <h2>About My Channel</h2>
   <p>
-    ✏️ My story:.<br>
-    It's all about Baldi's Basics, I started because I kept watching BBIEAL videos and I thought why not start a channel for fun?, At first I couldn't have good views but now a bit more better than before but even better in YT Shorts.
+    It's all about Baldi's Basics. I started because I kept watching BBIEAL videos
+    and thought — why not start a channel for fun?
+    At first I didn’t get many views, but now it’s growing and doing even better in YouTube Shorts.
   </p>
 
-  <h3>Channel Description</h3>
-  <p>
-    ✏️ I’m a gamer, game maker and YouTuber
-  </p>
+  <p><strong>I’m a gamer, game maker and YouTuber.</strong></p>
+
+  <div class="stats">
+    <div class="stat-box">Subscribers<br><strong>Growing 🚀</strong></div>
+    <div class="stat-box">Content<br><strong>Gaming & Mods</strong></div>
+    <div class="stat-box">Uploads<br><strong>Shorts + Videos</strong></div>
+  </div>
+
+  <a class="subscribe-btn" href="https://youtube.com/@ratinmineverse" target="_blank">
+    Subscribe on YouTube
+  </a>
 </section>
 
-<!-- ===== VIDEOS SECTION ===== -->
-<section id="videos" class="videos">
+<section id="videos">
   <h2>Latest Videos</h2>
-
-  <!-- Replace VIDEO IDs below -->
-  <iframe src="https://www.youtube.com/embed/AoGA-NGIfAk"></iframe>
-  <iframe src="https://www.youtube.com/embed/YLdhczBAKrk"></iframe>
-  <iframe src="https://www.youtube.com/embed/LB9e47G80xI"></iframe>
-
+  <div class="video-grid" id="videoContainer">
+    <!-- videos auto-load here -->
+  </div>
 </section>
 
-<!-- ===== SOCIAL LINKS ===== -->
-<section id="social">
+<section id="social" class="social">
   <h2>Follow Me</h2>
 
-  <p>
-    <a href="https://youtube.com/@ratinmineverse" target="_blank">
-      <i class="fab fa-youtube fa-2x"></i>
-    </a>
-
+  <a href="https://youtube.com/@ratinmineverse" target="_blank">
+    <i class="fab fa-youtube fa-2x"></i>
+  </a>
 </section>
 
-<!-- ===== CONTACT ===== -->
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: amirratindarzi@gmail.com</p>
@@ -150,6 +229,40 @@
 <footer>
   © 2026 ratinmineverse
 </footer>
+
+<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+/* ===== BACK TO TOP BUTTON ===== */
+const btn = document.getElementById("topBtn");
+window.onscroll = () => {
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+btn.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+
+/* ===== AUTO LOAD YOUTUBE VIDEOS ===== */
+/* REPLACE WITH YOUR CHANNEL ID */
+const channelID = "UCwgFu0QypmnfbvleE2Idq8g";
+
+/* loads latest uploads */
+fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelID}`)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => {
+    const entries = data.getElementsByTagName("entry");
+    const container = document.getElementById("videoContainer");
+
+    for (let i = 0; i < 6; i++) {
+      const videoId = entries[i].getElementsByTagName("yt:videoId")[0].textContent;
+
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube.com/embed/${videoId}`;
+      iframe.allowFullscreen = true;
+
+      container.appendChild(iframe);
+    }
+  });
+</script>
 
 </body>
 </html>
