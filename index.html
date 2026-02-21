@@ -1,15 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ratin_Mineverse's site!</title>
-    <link rel="stylesheet" href="style.css">
-  <head>
-  <body>
-    <header>Welcome</header>
-    <main>Main</main>
-    <footer>made by @ratinmineverse (yt) official site</footer>
-  <body>
-  <script src="script.js"></script>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your YouTube Channel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: url('banner.jpg') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h1 {
+      background: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background: #1f1f1f;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+      transform: scale(1.2);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .profile {
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-top: -60px;
+      background: #000;
+    }
+
+    .videos iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      margin: 15px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #1f1f1f;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media(max-width:600px){
+      nav {
+        gap: 18px;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== BANNER ===== -->
+<header>
+  <h1>Your Channel Name</h1>
+</header>
+
+<!-- PROFILE IMAGE -->
+<img src="logo.png" class="profile" alt="logo">
+
+<!-- ===== ICON NAVIGATION ===== -->
+<nav>
+  <a href="#about"><i class="fas fa-user"></i></a>
+  <a href="#videos"><i class="fas fa-play"></i></a>
+  <a href="#social"><i class="fas fa-share-alt"></i></a>
+  <a href="#contact"><i class="fas fa-envelope"></i></a>
+</nav>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about">
+  <h2>About My Channel</h2>
+  <p>
+    ✏️ Replace this text with your YouTuber story.<br>
+    Talk about your content, why you started, and what viewers can expect.
+  </p>
+
+  <h3>Channel Description</h3>
+  <p>
+    ✏️ Paste your YouTube channel description here.
+  </p>
+</section>
+
+<!-- ===== VIDEOS SECTION ===== -->
+<section id="videos" class="videos">
+  <h2>Latest Videos</h2>
+
+  <!-- Replace VIDEO IDs below -->
+  <iframe src="https://www.youtube.com/embed/AoGA-NGIfAk"></iframe>
+  <iframe src="https://www.youtube.com/embed/YLdhczBAKrk"></iframe>
+  <iframe src="https://www.youtube.com/embed/LB9e47G80xI"></iframe>
+
+</section>
+
+<!-- ===== SOCIAL LINKS ===== -->
+<section id="social">
+  <h2>Follow Me</h2>
+
+  <p>
+    <a href="https://youtube.com/" target="_blank">
+      <i class="fab fa-youtube fa-2x"></i>
+    </a>
+
+    <a href="https://twitter.com/" target="_blank">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+
+    <a href="https://instagram.com/" target="_blank">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+  </p>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+</section>
+
+<footer>
+  © 2026 Your Channel Name
+</footer>
+
+</body>
+</html>
